@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Warmup/Warmup.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:PerfectNumbers/PerfectNumbers.xcodeproj">
+   </FileRef>
 </Workspace>
