@@ -14,35 +14,35 @@
 using namespace std;
 
 const int MAX_VALUES = 1000;
-const int BUCKETS = 10;
-
-int values[MAX_VALUES];
-int valuesSize = 0;
-int buckets[BUCKETS];
-
+const int MAX_BUCKETS = 10;
 
 /*
  * Function Prototypes
  */
-void loadDataFromStream(ifstream &infile);
 void openFile(ifstream &infile);
-void loadBuckets();
-void printHistogram();
+void loadDataFromStream(ifstream &infile, int *vals, int &valsSize);
+void calculateHistogram(int *vals, int valsSize, int *ranges, int rangesSize);
+void printHistogram(int *ranges, int rangesSize);
 
 /*
  * Program entry-point
  */
 int main()
 {
+    // Variables to hold the data
+    int values[MAX_VALUES];
+    int valuesSize = 0;
+    int buckets[MAX_BUCKETS];
+    
     // Creates the input stream, open and loads it's data
     ifstream infile;
     openFile(infile);
-    loadDataFromStream(infile);
+    loadDataFromStream(infile, values, valuesSize);
     infile.close();
     
     // Calculates and prints the histogram
-    loadBuckets();
-    printHistogram();
+    calculateHistogram(values, valuesSize, buckets, MAX_BUCKETS);
+    printHistogram(buckets, MAX_BUCKETS);
     
     return 0;
 }
@@ -68,18 +68,19 @@ void openFile(ifstream &infile)
 
 /*
  * Function: loadDataFromStream
- * Usage: loadDataFromStream(infile)
+ * Usage: loadDataFromStream(infile, vals, valsSize)
  * ---------------------------------
- * Loads the data from the specified stream into the array of values
+ * Loads the data from the specified stream into the array of values passed as the pointer
+ * in the vals parameters. The valsSize keeps track of the effective size
  */
-void loadDataFromStream(ifstream &infile)
+void loadDataFromStream(ifstream &infile, int *vals, int &valsSize)
 {
     // Read each line of the file, loading into the array of values
     while (true) {
         string line;
         getline(infile, line);
         if (infile.fail()) break;
-        values[valuesSize++] = stringToInteger(line);
+        vals[valsSize++] = stringToInteger(line);
     }
     
     // Clears the error state
@@ -88,27 +89,33 @@ void loadDataFromStream(ifstream &infile)
 
 /*
  * Function: loadBuckets
- * Usage: loadBuckets
+ * Usage: loadBuckets(vals, valsSize, ranges, rangesSize)
  * ---------------------
- * Loads the buckets of the histogram, based on the loaded values
+ * Loads the buckets of the histogram, based on the vals array into the ranges bucket array
  */
-void loadBuckets()
+void calculateHistogram(int *vals, int valsSize, int *ranges, int rangesSize)
 {
     // resets the buckets values
-    for (int i = 0; i < BUCKETS; i++)
-        buckets[i] = 0;
+    for (int i = 0; i < rangesSize; i++)
+        ranges[i] = 0;
     
-    for (int i = 0; i < valuesSize; i++) {
-        int bucketN = values[i] / 10;
-        buckets[bucketN]++;
+    for (int i = 0; i < valsSize; i++) {
+        int bucketN = vals[i] / 10;
+        ranges[bucketN]++;
     }
 }
 
-void printHistogram()
+/*
+ * Function: printHistogram
+ * Usage: printHistogram(ranges, rangesSize)
+ * -----------------------------------------
+ * Prints the histogram based on the received array of bucket values (ranges) and the size of them
+ */
+void printHistogram(int *ranges, int rangesSize)
 {
-    for (int i = 0; i < BUCKETS; i++) {
+    for (int i = 0; i < rangesSize; i++) {
         cout << i * 10 << "-" << ((i+1) * 10) - 1 << ": ";
-        for (int j = 0; j < buckets[i]; j++) {
+        for (int j = 0; j < ranges[i]; j++) {
             cout << "X";
         }
         cout << endl;
