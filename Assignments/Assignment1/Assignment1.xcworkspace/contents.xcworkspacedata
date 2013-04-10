@@ -10,4 +10,7 @@
    <FileRef
       location = "group:VotingSimulation/VotingSimulation.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ChaosGame/ChaosGame.xcodeproj">
+   </FileRef>
 </Workspace>
