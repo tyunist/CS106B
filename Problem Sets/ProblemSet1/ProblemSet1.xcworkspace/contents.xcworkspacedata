@@ -4,4 +4,7 @@
    <FileRef
       location = "group:CensorString/CensorString.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:GradeStats/GradeStats.xcodeproj">
+   </FileRef>
 </Workspace>
