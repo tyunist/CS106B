@@ -13,4 +13,7 @@
    <FileRef
       location = "group:ChaosGame/ChaosGame.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Soudex/Soudex.xcodeproj">
+   </FileRef>
 </Workspace>
