@@ -16,4 +16,7 @@
    <FileRef
       location = "group:Soudex/Soudex.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Histogram/Histogram.xcodeproj">
+   </FileRef>
 </Workspace>
