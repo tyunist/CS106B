@@ -7,4 +7,7 @@
    <FileRef
       location = "group:GradeStats/GradeStats.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CountLetters/CountLetters.xcodeproj">
+   </FileRef>
 </Workspace>
