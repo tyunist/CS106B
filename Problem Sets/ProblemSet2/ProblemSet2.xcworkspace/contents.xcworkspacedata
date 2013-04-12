@@ -7,4 +7,7 @@
    <FileRef
       location = "group:ReverseQueue/ReverseQueue.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:HtmlNesting/HtmlNesting.xcodeproj">
+   </FileRef>
 </Workspace>
