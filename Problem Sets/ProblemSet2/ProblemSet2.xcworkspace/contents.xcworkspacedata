@@ -13,4 +13,7 @@
    <FileRef
       location = "group:MostFrequentCharacter/MostFrequentCharacter.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Minesweeper/Minesweeper.xcodeproj">
+   </FileRef>
 </Workspace>
