@@ -10,4 +10,7 @@
    <FileRef
       location = "group:HtmlNesting/HtmlNesting.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:MostFrequentCharacter/MostFrequentCharacter.xcodeproj">
+   </FileRef>
 </Workspace>
