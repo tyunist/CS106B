@@ -32,7 +32,12 @@ struct emailMsg2 {
     int time;
 };
 
-// A function that remove spam messages, as proposed by exercise b
+/*
+ * Function: removeSpam
+ * Usage: removeSpam(messages)
+ * ---------------------------
+ * A function that remove spam messages, as proposed by exercise b
+ */
 void removeSpam(Vector<emailMsg> &messages)
 {
     string prefix = "SPAM";
@@ -50,6 +55,9 @@ void removeSpam(Vector<emailMsg> &messages)
     }
 }
 
+/*
+ * Tests program entry-point
+ */
 int main()
 {
     // Declares a vector to store eMailMessages, as proposed by exercise a

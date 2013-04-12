@@ -4,4 +4,7 @@
    <FileRef
       location = "group:MailProg/MailProg.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ReverseQueue/ReverseQueue.xcodeproj">
+   </FileRef>
 </Workspace>
