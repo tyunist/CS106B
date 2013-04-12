@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5334E9381717BC190054D4BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5334E9361717BC190054D4BD /* main.cpp */; };
+		5334E93B1718AFAD0054D4BD /* sawyer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5334E9391718AFAD0054D4BD /* sawyer.txt */; };
+		5334E93C1718AFAD0054D4BD /* samsa.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5334E93A1718AFAD0054D4BD /* samsa.txt */; };
 		E3DDB4120D2F60C500348E1D /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5334E9361717BC190054D4BD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5334E9391718AFAD0054D4BD /* sawyer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sawyer.txt; sourceTree = "<group>"; };
+		5334E93A1718AFAD0054D4BD /* samsa.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = samsa.txt; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* RandomWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81255C316B4AC8C00098A07 /* spl.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = spl.jar; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				5334E9361717BC190054D4BD /* main.cpp */,
+				5334E9391718AFAD0054D4BD /* sawyer.txt */,
+				5334E93A1718AFAD0054D4BD /* samsa.txt */,
 			);
 			name = RandomWriter;
 			sourceTree = "<group>";
@@ -129,6 +135,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5334E93B1718AFAD0054D4BD /* sawyer.txt in Resources */,
+				5334E93C1718AFAD0054D4BD /* samsa.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
