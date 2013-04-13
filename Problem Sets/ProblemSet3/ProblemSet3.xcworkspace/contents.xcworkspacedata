@@ -4,4 +4,7 @@
    <FileRef
       location = "group:CartesianProducts/CartesianProducts.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Cannonballs/Cannonballs.xcodeproj">
+   </FileRef>
 </Workspace>
