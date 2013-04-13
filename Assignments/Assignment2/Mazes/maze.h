@@ -8,6 +8,7 @@
 #ifndef _maze_h
 #define _maze_h
 
+#include "gwindow.h"
 #include "grid.h"
 
 /*
@@ -119,6 +120,7 @@ class Maze {
 		private:
 			enum dirT {North, East, South, West, NumDirs};
 			struct cellT {bool walls[NumDirs];};
+            GWindow gw;
 			Grid<cellT> cells;
 			double originX, originY, cellSize;
 			bool configured;
