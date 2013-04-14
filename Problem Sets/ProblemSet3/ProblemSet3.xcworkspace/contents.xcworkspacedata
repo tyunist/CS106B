@@ -20,6 +20,9 @@
       location = "group:GCD/GCD.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:IsMeasurable/IsMeasurable.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ListMnemonics/ListMnemonics.xcodeproj">
    </FileRef>
 </Workspace>
