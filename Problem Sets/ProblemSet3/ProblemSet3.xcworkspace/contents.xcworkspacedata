@@ -5,6 +5,9 @@
       location = "group:SetCallbacks/SetCallbacks.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Maps/Maps.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CartesianProducts/CartesianProducts.xcodeproj">
    </FileRef>
    <FileRef
