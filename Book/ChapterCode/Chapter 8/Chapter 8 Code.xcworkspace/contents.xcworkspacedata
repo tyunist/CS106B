@@ -4,4 +4,10 @@
    <FileRef
       location = "group:HanoiTower/HanoiTower.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:HanoiTowerGraph/HanoiTowerGraph.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Permutations/Permutations.xcodeproj">
+   </FileRef>
 </Workspace>
