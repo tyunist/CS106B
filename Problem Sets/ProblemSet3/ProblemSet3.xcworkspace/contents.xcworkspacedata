@@ -16,4 +16,7 @@
    <FileRef
       location = "group:ReverseString/ReverseString.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:GCD/GCD.xcodeproj">
+   </FileRef>
 </Workspace>
