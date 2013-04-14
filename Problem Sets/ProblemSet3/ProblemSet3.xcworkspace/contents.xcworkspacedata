@@ -13,4 +13,7 @@
    <FileRef
       location = "group:Cannonballs/Cannonballs.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ReverseString/ReverseString.xcodeproj">
+   </FileRef>
 </Workspace>
