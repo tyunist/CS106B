@@ -11,6 +11,27 @@
 #include "gwindow.h"
 #include "grid.h"
 
+
+/*
+ * Type: pointT
+ * ------------
+ * The type pointT is used to encapsulate a pair of integer
+ * coordinates into a single value with row and col components.
+ */
+
+struct pointT {
+	int row;
+	int col;
+};
+
+/* Operators for the pointT struct */
+bool operator==(pointT p1, pointT p2);
+bool operator!=(pointT p1, pointT p2);
+bool operator<(pointT p1, pointT p2);
+bool operator>(pointT p1, pointT p2);
+bool operator<=(pointT p1, pointT p2);
+bool operator>=(pointT p1, pointT p2);
+
 /*
  * Class: Maze
  * -----------
@@ -23,21 +44,6 @@
  * neighbors may not exist for cells along the outer border).  The 
  * maze tracks which walls are up bewteen a cell and its neighbor.
  */
-
-
-/*
- * Type: pointT
- * ------------
- * The type pointT is used to encapsulate a pair of integer
- * coordinates into a single value with row and col components.
- */
-
-struct pointT { 
-	int row; 
-	int col; 
-};
-
-
 class Maze {
 	public:
 	

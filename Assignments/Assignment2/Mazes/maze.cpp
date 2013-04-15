@@ -7,6 +7,59 @@
 #include "maze.h"
 #include "gobjects.h"
 
+/*
+ *  Operators for the pointT struct
+ */
+
+bool operator==(pointT p1, pointT p2)
+{
+    return (p1.row == p2.row && p1.col == p2.col);
+}
+
+bool operator!=(pointT p1, pointT p2)
+{
+    return !(p1 == p2);
+}
+
+bool operator<(pointT p1, pointT p2)
+{
+    if (p1.row < p2.row) return true;
+    if (p1.col < p2.col) return true;
+    
+    return false;
+}
+
+bool operator>(pointT p1, pointT p2)
+{
+    if (p1.row > p2.row) return true;
+    if (p1.col > p2.col) return true;
+    
+    return false;
+    
+}
+
+bool operator<=(pointT p1, pointT p2)
+{
+    if (p1.row <= p2.row) return true;
+    if (p1.col <= p2.col) return true;
+    
+    return false;
+
+}
+
+bool operator>=(pointT p1, pointT p2)
+{
+    if (p1.row >= p2.row) return true;
+    if (p1.col >= p2.col) return true;
+    
+    return false;
+
+}
+
+/*
+ *  Class methods
+ */
+
 Maze::Maze(int numRows, int numCols, bool hasWalls) : cells(numRows, numCols) 
 {
 	for (int r = 0; r < numRows; r++)
