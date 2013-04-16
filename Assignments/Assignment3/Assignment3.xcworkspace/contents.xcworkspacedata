@@ -14,5 +14,8 @@
    <Group
       location = "container:"
       name = "Problems">
+      <FileRef
+         location = "group:CountWays/CountWays.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
