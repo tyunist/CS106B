@@ -17,5 +17,8 @@
       <FileRef
          location = "group:CountWays/CountWays.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Ruler/Ruler.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
