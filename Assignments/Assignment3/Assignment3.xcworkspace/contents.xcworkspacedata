@@ -20,5 +20,8 @@
       <FileRef
          location = "group:Ruler/Ruler.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Puzzle/Puzzle.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
