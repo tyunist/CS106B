@@ -7,6 +7,9 @@
       <FileRef
          location = "group:PrintBinary/PrintBinary.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:SubsetSum/SubsetSum.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
