@@ -21,7 +21,16 @@
          location = "group:Ruler/Ruler.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:VoteCounts/VoteCounts.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:CellPhone/CellPhone.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Puzzle/Puzzle.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:StockCutting/StockCutting.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>
