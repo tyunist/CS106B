@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Docs">
+      <FileRef
+         location = "group:H20S-SectionSolutions4.pdf">
+      </FileRef>
+      <FileRef
+         location = "group:H20-SectionHandout4.pdf">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Projects">
+      <FileRef
+         location = "group:FillingRegion/FillingRegion.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ShortestPathMaze/ShortestPathMaze.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Pointers/Pointers.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:LinkedListWarmup/LinkedListWarmup.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:LinkedListTrace/LinkedListTrace.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Append/Append.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

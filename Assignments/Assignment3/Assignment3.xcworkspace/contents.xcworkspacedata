@@ -3,6 +3,16 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "Docs">
+      <FileRef
+         location = "group:Assign3WarmupSoln.txt">
+      </FileRef>
+      <FileRef
+         location = "group:H18-Assign3RecPS.pdf">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Warmups">
       <FileRef
          location = "group:PrintBinary/PrintBinary.xcodeproj">
